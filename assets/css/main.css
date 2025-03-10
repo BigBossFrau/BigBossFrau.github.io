@@ -72,6 +72,26 @@ input, select, textarea {
 	appearance: none;
 }
 
+/* General icon styles */
+ul.icons li a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+ul.icons li img {
+    width: 34px;  /* Adjust the icon size */
+    height: 34px; /* Adjust the icon size */
+    transition: filter 0.3s ease; /* Smooth transition for filter effect */
+    filter: opacity(0.6); /* Darken the icon slightly at idle */
+}
+
+/* Hover effect - lighten on hover for both Font Awesome and local icons */
+ul.icons li a:hover img {
+    filter: opacity(1.2); /* Lighten on hover */
+}
+
+
 /* Basic */
 
 	html {
@@ -2829,7 +2849,7 @@ input, select, textarea {
 	}
 
 		#main > section > .container {
-			padding: 6em 0 4em 0;
+			padding: 3.5em 0 3em 0;
 		}
 
 		#main > section:first-child {
